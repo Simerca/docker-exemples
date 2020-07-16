@@ -1,0 +1,11 @@
+version: '3.7'
+
+networks:
+  web:
+    external: true
+
+services:
+  app:
+    image: exemple-registry
+    container_name: exemple-webapp
+    restart: unless-stopped
